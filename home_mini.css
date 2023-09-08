@@ -1,0 +1,119 @@
+*{margin:0px;
+padding:0px;
+}
+.hheader{
+    background-color:  rgb(167, 6, 105);
+    height:75px;
+}
+.hnav{
+    float:right;
+    margin-right:25px;    
+}
+.hlist{
+    list-style: none;
+}
+.hnav{
+    display:inline-block;
+}
+.hlist li {
+display: inline-block;
+margin-right:20px;
+margin-top:20px;
+}
+.ancdrop{
+    text-decoration: none;
+    color:black;
+
+}
+.ahome{
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+}
+.button1{
+    padding: 6px 24px;
+    border: 2px rgb(167, 6, 105);
+    background-color:white;
+    border-radius:6px ;
+    cursor: pointer;
+    font-size:17px;
+}
+.esubject li{line-height: 6px;
+    display: block;
+    font-size:17px;}
+.esubject{
+    margin-top:30px;
+    
+    border: 3px solid rgb(167, 6, 105);
+    background-color: rgb(235, 172, 196);
+}
+.acontainer{  
+    align-items: center;
+    display: flex;
+    justify-content: center;
+height:300px;
+
+}
+.dd{
+    cursor: pointer;
+}
+.hexp{
+    float:left;
+    
+position:absolute;
+top:4%;
+left:20%;}
+.hsearinp{
+    width: 270px;
+font-size:17px;
+padding:10px;
+border: none;
+}
+.aasearch
+{border:solid;
+    border-radius: 10px;
+    width:330px;
+    padding:2px;
+}
+.subject
+{
+  line-height:33px;
+  font-size:18px;
+  font-weight: bold;
+}  
+  .subjects{ 
+  width:200px;
+  margin-left:10px;
+  padding:5px;
+  }
+.button:active{
+    transform: scale(0.98);
+}
+.drop{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.h.show .drop{
+    opacity: 1;
+    pointer-events: auto;
+}
+.h::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: gainsboro;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);  
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease-out;
+}
+.h.show::before{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+    
